@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    float marks;
+    cout<<"Enter the percentage mark obtain by the student:"<<endl;
+    cin>>marks;
+    
+    if(marks>100){
+        cout<<"Invalid input (please enter the marks within the range(0-100)";
+    }
+    else{
+        
+        if(marks>90){
+            cout<<"Grade obtain by the Student: A1 Grade";
+        }
+        else if(marks>=80 && marks<=90){
+            cout<<"Grade obtain by the Student: A2 Grade";
+        }
+        else if(marks>=70 && marks<80){
+            cout<<"Grade obtain by the Student: B1 Grade";
+        }
+        else if(marks>=60 && marks<70){
+            cout<<"Grade obtain by the Student: B2 Grade";
+        }
+        else if(marks>=50 && marks<60){
+            cout<<"Grade obtain by the Student: C1 Grade";
+        }
+        else if(marks>=40 && marks<50){
+            cout<<"Grade obtain by the Student: C2 Grade";
+        }
+        else if(marks>=35 && marks<40){
+            cout<<"Grade obtain by the Student: D Grade";
+        }
+        else{
+            cout<<"Failed";
+        }
+        
+    }
+
+    return 0;
+}
